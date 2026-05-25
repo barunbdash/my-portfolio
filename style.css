@@ -440,3 +440,58 @@ footer {
   .timeline-header { flex-direction: column; }
   .timeline-meta { text-align: left; }
 }
+
+/* ================================
+   CERTIFICATIONS
+================================ */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.cert-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.cert-card:hover {
+  border-color: rgba(0, 229, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 229, 255, 0.1);
+}
+
+.cert-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cert-icon { font-size: 1.3rem; }
+
+.cert-badge {
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  color: var(--accent);
+}
+
+.cert-name {
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.cert-link {
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-top: 0.25rem;
+}
