@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Barun Bikram Dash | Data Scientist & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,11 +16,13 @@
   <!-- NAVIGATION -->
   <nav>
     <span class="nav-logo">Barun.dev</span>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </div>
@@ -25,40 +30,54 @@
 
   <!-- HERO SECTION -->
   <section id="hero">
-    <p class="hero-tag">Data Science Master's Student · Trier, Germany</p>
-    <h1>Barun Bikram Dash</h1>
-    <p class="hero-title">Data Scientist · AI/ML Engineer · Data Analytics · Data Engineer · SQL Developer</p>
-    <p class="hero-desc">
-      3 years of industry experience across the full data stack, from ETL pipelines and ML model deployment
-      to BI reporting and NLP. Reduced product waste from 50% to under 10% using Random Forest forecasting.
-      Built Python pipelines consolidating $2.8B in data, saving 10+ hours weekly.
-    </p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn btn-filled">View My Projects</a>
-      <a href="#contact" class="btn">Get In Touch</a>
+    <div class="hero-grid-bg"></div>
+    <div class="hero-inner">
+      <p class="hero-tag">Data & ML Engineer · M.Sc. Data Science · Trier, Germany</p>
+      <h1>Barun Bikram Dash</h1>
+      <p class="hero-title">Data Scientist · AI/ML Engineer · Data Engineer · Cloud Platform Architect</p>
+      <p class="hero-desc">
+        3+ years designing end-to-end data and AI solutions — from ETL pipelines and ML model deployment
+        to BI reporting, NLP, and IoT edge inference. Reduced product waste from 50% to under 10% using
+        Random Forest forecasting. Built Python pipelines consolidating $2.8B in data, saving 10+ hours weekly.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-filled">View My Projects</a>
+        <a href="#contact" class="btn">Get In Touch</a>
+        <a href="https://github.com/barunbdash" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+      </div>
+      <div class="hero-stack">
+        <span>Python</span><span>SQL</span><span>PySpark</span><span>TensorFlow</span><span>Azure</span><span>GCP</span><span>Power BI</span><span>RAG</span>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT SECTION -->
   <section id="about">
-    <p class="section-label"> 1. about me</p>
+    <p class="section-label">01 · about me</p>
     <h2>Who I Am</h2>
     <div class="about-grid">
       <div class="about-text">
         <p>
-          I'm a Data Science Master's student at Universität Trier with a strong foundation across the entire
-          data stack, ETL pipeline engineering, statistical analysis, ML model deployment, and BI reporting.
+          Master's in Data Science at Universität Trier, with 3+ years of experience designing and creating
+          end-to-end data and AI solutions on cloud platforms, machine learning pipelines, and production apps.
         </p>
         <p>
-          I achieved the highest possible grade in Databases & SQL coursework, reinforcing applied SQL experience
-          built across enterprise consulting and forecasting projects at PwC.
+          As a cloud data platform architect, I have hands-on experience automating workflows from POS to Snowflake,
+          streaming data ingestion on Azure, integrating BigQuery with Azure batch processes, and building scalable
+          ETL/ELT pipelines using Python, SQL, and PySpark.
         </p>
         <p>
-          Proficient in Python, SQL, Scala, Scikit-learn, TensorFlow, Power BI, Tableau, Spark, and Azure 
-          with practical exposure to Big Data technologies, NLP, time series, deep learning, and IoT edge computing.
+          On the ML side, I cover the whole model lifecycle — from preprocessing, feature engineering, and training
+          using scikit-learn, TensorFlow, and Keras, through to validation, deployment, and monitoring. Currently
+          developing expertise in IoT analytics, early risk detection, and LLM-enabled applications including RAG.
+        </p>
+        <p>
+          I achieved the top grade (1.0) in Databases & Programming, reinforcing applied SQL experience built
+          across enterprise consulting and forecasting projects at PwC.
         </p>
         <div class="about-links">
           <a href="https://www.linkedin.com/in/barun-bikram-dash-535966201/" target="_blank" class="btn btn-sm">LinkedIn ↗</a>
+          <a href="https://scholar.google.com/citations?user=0cNvjr8AAAAJ&hl=en" target="_blank" class="btn btn-sm">Scholar ↗</a>
           <a href="mailto:barunbikramdash@gmail.com" class="btn btn-sm">Email Me</a>
         </div>
       </div>
@@ -85,7 +104,7 @@
 
   <!-- EXPERIENCE SECTION -->
   <section id="experience">
-    <p class="section-label"> 2. experience</p>
+    <p class="section-label">02 · experience</p>
     <h2>Where I've Worked</h2>
     <div class="timeline">
 
@@ -94,21 +113,24 @@
         <div class="timeline-content">
           <div class="timeline-header">
             <div>
-              <h3>Werkstudent</h3>
+              <h3>Working Student — Data Science & ML</h3>
               <span class="company">Biebelhausener Mühle</span>
             </div>
             <div class="timeline-meta">
               <span class="date">05/2025 – 12/2025</span>
-              <span class="location">Trier, Germany</span>
+              <span class="location">Saarburg, Germany</span>
             </div>
           </div>
           <ul>
-            <li>Built weekly sales forecasting models using Random Forest Regression, cutting product waste from 50% to under 10% and directly boosting profit margins by an estimated 30% through smarter supply chain decisions</li>
-            <li>Automated Excel-based reporting workflows with Python, saving the team around 4 hours of manual work every single day so that time went straight back into higher value tasks</li>
-            <li>Designed and maintained Power BI dashboards that gave management a real-time view of sales trends, production efficiency and KPIs making weekly reporting meetings actually useful</li>
-            <li>Rolled out per-store, per-category dynamic forecasting that helped the production team plan smarter, reduce overstock and get the right products to the right locations on time</li>
-            <li>Rebuilt and optimized data scripts across HR, inventory and operations to handle growing data volumes without breaking making the whole data infrastructure more reliable and scalable</li>
+            <li>Reduced product waste from 50% to below 10% by training and evaluating Random Forest forecasting models in Python and scikit-learn for store-level demand planning</li>
+            <li>Expanded forecasting coverage across 10+ store-category combinations by preprocessing POS and inventory data, engineering model-ready features, and validating forecast outputs</li>
+            <li>Saved over 4 hours of manual work per day by automating recurring data preparation, validation, forecasting, and reporting workflows in Python</li>
+            <li>Improved model-input reliability by consolidating POS, inventory, HR, and operational data with checks for missing values, duplicates, and inconsistencies</li>
+            <li>Designed and maintained Power BI dashboards giving management real-time visibility into sales trends, production efficiency, and KPIs</li>
           </ul>
+          <div class="tl-tags">
+            <span class="tag">Random Forest</span><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Power BI</span><span class="tag">POS Data</span>
+          </div>
         </div>
       </div>
 
@@ -117,20 +139,24 @@
         <div class="timeline-content">
           <div class="timeline-header">
             <div>
-              <h3>Associate – Data Analytics</h3>
-              <span class="company">PwC</span>
+              <h3>Associate — Data Analytics & ML</h3>
+              <span class="company">PwC Acceleration Center</span>
             </div>
             <div class="timeline-meta">
               <span class="date">08/2022 – 08/2024</span>
-              <span class="location">Bangalore, India</span>
+              <span class="location">Bengaluru, India</span>
             </div>
           </div>
           <ul>
-            <li>Trained and deployed an AI-powered NLP chatbot automating 80% of customer support tasks</li>
-            <li>Developed end-to-end Python data pipeline consolidating $2.8B in multi-source datasets, saving 10+ hours weekly</li>
-            <li>Assisted in web scraping 6.6 million records for downstream analytics</li>
-            <li>Automated dynamic Excel reports using VBA, reducing manual effort by 20+ hours/week</li>
+            <li>Reduced manual support workload by ~80% by designing and deploying a Python-based NLP chatbot for automated information retrieval and user interactions</li>
+            <li>Prepared nearly $2.8B in multi-source data for analytics and ML by building Python and SQL workflows for preprocessing, transformation, validation, and reconciliation</li>
+            <li>Enabled predictive analytics across 6.6M+ records by engineering model-ready features from structured, relational, and web-derived datasets</li>
+            <li>Improved scalability of recurring ML workflows by developing reusable Python, SQL, and PySpark transformations for cleansing, deduplication, and feature engineering</li>
+            <li>Accelerated KPI forecasting and stakeholder analysis by applying statistical models and integrating outputs into Power BI visualizations</li>
           </ul>
+          <div class="tl-tags">
+            <span class="tag">NLP</span><span class="tag">PySpark</span><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">ETL/ELT</span>
+          </div>
         </div>
       </div>
 
@@ -140,17 +166,20 @@
           <div class="timeline-header">
             <div>
               <h3>Data Analytics Intern</h3>
-              <span class="company">PwC</span>
+              <span class="company">PwC Acceleration Center</span>
             </div>
             <div class="timeline-meta">
               <span class="date">03/2022 – 08/2022</span>
-              <span class="location">Bangalore, India</span>
+              <span class="location">Bengaluru, India</span>
             </div>
           </div>
           <ul>
-            <li>Collaborated on data modeling and predictive analysis, saving nearly 10 hours/week</li>
-            <li>Created stakeholder dashboards informing decisions that generated ~$5.6M in revenue</li>
+            <li>Saved ~10 hours of recurring team effort per week by automating data preparation, validation, and analytical workflows supporting predictive modelling</li>
+            <li>Supported decisions associated with ~$5.6M in reported revenue impact by translating analytical and ML-driven findings into clear stakeholder visualizations</li>
           </ul>
+          <div class="tl-tags">
+            <span class="tag">Python</span><span class="tag">Tableau</span><span class="tag">Predictive Analytics</span>
+          </div>
         </div>
       </div>
 
@@ -168,8 +197,12 @@
             </div>
           </div>
           <ul>
-            <li>Developed an ML model to predict invoice payment dates using ensemble methods, achieving &gt;90% accuracy</li>
+            <li>Developed an ensemble ML solution to predict invoice payment dates, achieving &gt;90% accuracy on historical data, and deployed it as a real-time web application for live predictions</li>
+            <li>Performed end-to-end data preprocessing, feature engineering, model training, validation, and evaluation to identify predictive patterns influencing payment behaviour</li>
           </ul>
+          <div class="tl-tags">
+            <span class="tag">Ensemble ML</span><span class="tag">scikit-learn</span><span class="tag">Feature Engineering</span>
+          </div>
         </div>
       </div>
 
@@ -178,22 +211,26 @@
 
   <!-- PROJECTS SECTION -->
   <section id="projects">
-    <p class="section-label"> 3. projects</p>
+    <p class="section-label">03 · projects</p>
     <h2>What I've Built</h2>
     <div class="projects-grid">
 
       <div class="project-card">
         <div class="project-icon">🌾</div>
         <div class="project-name">Farm_Easy</div>
+        <div class="project-badge">IoT · Edge AI · GenAI</div>
         <div class="project-desc">
-          End-to-end AI-powered fruit freshness detection system combining YOLOv8 object detection and a custom
-          Keras CNN classifier, deployed on Raspberry Pi for real-time edge inference with sub-second latency.
-          Cuts potential spoilage rates by 20–30%.
+          End-to-end IoT-enabled AI pipeline combining YOLOv8 object detection and a custom Keras CNN on Raspberry Pi
+          for real-time product freshness classification with sub-second edge inference. Includes a RAG-powered AI chatbot
+          for natural-language product information retrieval — combining computer vision, edge AI, and generative AI in
+          one offline-capable application. Estimated 20–30% reduction in spoilage rates.
         </div>
         <div class="project-tags">
           <span class="tag">YOLOv8</span>
           <span class="tag">Keras CNN</span>
           <span class="tag">Raspberry Pi</span>
+          <span class="tag">RAG</span>
+          <span class="tag">LLM</span>
           <span class="tag">IoT</span>
           <span class="tag">Python</span>
         </div>
@@ -202,32 +239,36 @@
       <div class="project-card">
         <div class="project-icon">💰</div>
         <div class="project-name">Cash Flow Intelligence System</div>
+        <div class="project-badge">ML · Blockchain · FinTech</div>
         <div class="project-desc">
-          ML model on historical invoice data achieving &gt;90% accuracy for payment date prediction — directly
-          applicable to AR forecasting. Extended into a blockchain batch queueing system using queuing theory
-          to minimize miner costs.
+          Ensemble ML model on historical invoice data achieving &gt;90% accuracy for payment date prediction —
+          deployed as a real-time web application for live AR forecasting. Extended with a blockchain batch queueing
+          system using queuing theory to minimize miner transaction costs.
         </div>
         <div class="project-tags">
           <span class="tag">Python</span>
           <span class="tag">Scikit-learn</span>
           <span class="tag">Ensemble ML</span>
           <span class="tag">Blockchain</span>
+          <span class="tag">Web App</span>
         </div>
       </div>
 
       <div class="project-card">
         <div class="project-icon">👁️</div>
         <div class="project-name">Braille Speak</div>
+        <div class="project-badge">Computer Vision · Accessibility</div>
         <div class="project-desc">
-          CNN model to recognize Braille characters from image input, integrated with a TTS pipeline to convert
-          recognized text to spoken audio. A fully functional accessibility tool bridging visual impairment
-          with audio output.
+          CNN model trained to classify the complete Braille alphabet from image inputs, integrated with a text-to-speech
+          pipeline to convert recognized text to spoken audio. A fully functional accessibility tool bridging visual
+          impairment with audio output.
         </div>
         <div class="project-tags">
           <span class="tag">Python</span>
           <span class="tag">CNN</span>
           <span class="tag">Computer Vision</span>
           <span class="tag">TTS</span>
+          <span class="tag">Accessibility</span>
         </div>
       </div>
 
@@ -236,71 +277,185 @@
 
   <!-- SKILLS SECTION -->
   <section id="skills">
-    <p class="section-label"> 4. skills</p>
+    <p class="section-label">04 · skills</p>
     <h2>My Tech Stack</h2>
     <div class="skills-grid">
 
       <div class="skill-group">
-        <h4>Languages & Querying</h4>
+        <h4>Programming & Data</h4>
         <div class="skill-tags">
           <span class="skill-tag">Python</span>
           <span class="skill-tag">SQL</span>
+          <span class="skill-tag">PySpark</span>
           <span class="skill-tag">Scala</span>
-          <span class="skill-tag">C/C++</span>
+          <span class="skill-tag">R</span>
           <span class="skill-tag">Java</span>
-          <span class="skill-tag">VBScript</span>
+          <span class="skill-tag">C/C++</span>
           <span class="skill-tag">MATLAB</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <h4>ML & AI</h4>
+        <h4>Machine Learning</h4>
         <div class="skill-tags">
           <span class="skill-tag">Scikit-learn</span>
           <span class="skill-tag">TensorFlow</span>
           <span class="skill-tag">Keras</span>
-          <span class="skill-tag">NLP</span>
-          <span class="skill-tag">Time Series</span>
           <span class="skill-tag">Random Forest</span>
-          <span class="skill-tag">YOLOv8</span>
-          <span class="skill-tag">PySpark</span>
+          <span class="skill-tag">XGBoost</span>
+          <span class="skill-tag">Ensemble Methods</span>
+          <span class="skill-tag">Time Series</span>
+          <span class="skill-tag">NLP</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <h4>Data & BI Tools</h4>
+        <h4>Generative AI & IoT</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">RAG</span>
+          <span class="skill-tag">LLM Applications</span>
+          <span class="skill-tag">Text Classification</span>
+          <span class="skill-tag">YOLOv8</span>
+          <span class="skill-tag">CNN</span>
+          <span class="skill-tag">Edge AI</span>
+          <span class="skill-tag">Raspberry Pi</span>
+          <span class="skill-tag">IoT</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Big Data & Cloud</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Azure</span>
+          <span class="skill-tag">GCP</span>
+          <span class="skill-tag">Apache Spark</span>
+          <span class="skill-tag">BigQuery</span>
+          <span class="skill-tag">Snowflake</span>
+          <span class="skill-tag">ETL/ELT</span>
+          <span class="skill-tag">Hive</span>
+          <span class="skill-tag">Streaming Pipelines</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Visualization & BI</h4>
         <div class="skill-tags">
           <span class="skill-tag">Power BI</span>
           <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Plotly</span>
+          <span class="skill-tag">Matplotlib</span>
           <span class="skill-tag">Excel VBA</span>
-          <span class="skill-tag">Alteryx</span>
-          <span class="skill-tag">Azure</span>
-          <span class="skill-tag">Apache Spark</span>
-          <span class="skill-tag">Hive</span>
-          <span class="skill-tag">GCP</span>
+          <span class="skill-tag">Jupyter</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <h4>Libraries & Other</h4>
+        <h4>Libraries & Tools</h4>
         <div class="skill-tags">
           <span class="skill-tag">Pandas</span>
           <span class="skill-tag">NumPy</span>
-          <span class="skill-tag">Matplotlib</span>
-          <span class="skill-tag">Plotly</span>
+          <span class="skill-tag">Polars</span>
           <span class="skill-tag">BeautifulSoup</span>
           <span class="skill-tag">Selenium</span>
           <span class="skill-tag">Git / GitHub</span>
-          <span class="skill-tag">IoT / Raspberry Pi</span>
+          <span class="skill-tag">Alteryx</span>
         </div>
       </div>
 
     </div>
   </section>
 
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <p class="section-label">05 · education</p>
+    <h2>Academic Background</h2>
+    <div class="edu-grid">
+
+      <div class="edu-card edu-current">
+        <div class="edu-header">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-badge">Current</div>
+        </div>
+        <h3>M.Sc. Data Science</h3>
+        <span class="edu-school">Universität Trier</span>
+        <div class="edu-meta">
+          <span class="edu-date">10/2024 – Present</span>
+          <span class="edu-loc">Trier, Germany</span>
+        </div>
+        <div class="edu-highlights">
+          <div class="edu-highlight">
+            <span class="highlight-label">Overall GPA</span>
+            <span class="highlight-val">2.6 / 4.0 <span class="highlight-note">(German scale)</span></span>
+          </div>
+          <div class="edu-highlight">
+            <span class="highlight-label">Databases & Programming</span>
+            <span class="highlight-val grade-top">1.0 — Top Grade ★</span>
+          </div>
+        </div>
+        <div class="edu-focus">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Big Data</span>
+          <span class="tag">Statistical Analysis</span>
+          <span class="tag">Cloud Computing</span>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-header">
+          <div class="edu-icon">🏛️</div>
+        </div>
+        <h3>B.Tech — Electronics & Telecommunication</h3>
+        <span class="edu-school">KIIT University</span>
+        <div class="edu-meta">
+          <span class="edu-date">05/2018 – 05/2022</span>
+          <span class="edu-loc">Bhubaneswar, India</span>
+        </div>
+        <div class="edu-highlights">
+          <div class="edu-highlight">
+            <span class="highlight-label">Overall GPA</span>
+            <span class="highlight-val">1.5 / 4.0 <span class="highlight-note">(German scale)</span></span>
+          </div>
+        </div>
+        <div class="edu-focus">
+          <span class="tag">Signal Processing</span>
+          <span class="tag">Embedded Systems</span>
+          <span class="tag">Programming</span>
+          <span class="tag">Mathematics</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="lang-block">
+      <h3 class="lang-title">Languages</h3>
+      <div class="lang-grid">
+        <div class="lang-card">
+          <div class="lang-top">
+            <span class="lang-name">English</span>
+            <span class="lang-level">C1 — Fluent</span>
+          </div>
+          <div class="lang-bar">
+            <div class="lang-fill" style="width: 88%"></div>
+          </div>
+        </div>
+        <div class="lang-card">
+          <div class="lang-top">
+            <span class="lang-name">German</span>
+            <span class="lang-level">A2 — Actively Improving</span>
+          </div>
+          <div class="lang-bar">
+            <div class="lang-fill lang-de" style="width: 25%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
   <!-- CERTIFICATIONS SECTION -->
   <section id="certifications">
-    <p class="section-label"> 5. certifications</p>
+    <p class="section-label">06 · certifications</p>
     <h2>My Certifications</h2>
     <div class="cert-grid">
 
@@ -340,15 +495,6 @@
         <span class="cert-link">View Credential ↗</span>
       </a>
 
-      <a class="cert-card" href="https://www.udemy.com/course/machinelearning/?couponCode=CP260518SUMXLD" target="_blank">
-        <div class="cert-top">
-          <span class="cert-icon">🏆</span>
-          <span class="cert-badge">Udemy</span>
-        </div>
-        <span class="cert-name">Machine Learning A-ZTM: Hands-On Python & R In Data Science</span>
-        <span class="cert-link">View Credential ↗</span>
-      </a>
-
       <a class="cert-card" href="https://www.udemy.com/certificate/UC-34bf4e8e-5e19-4fa9-bf3c-3656f4929ecd/" target="_blank">
         <div class="cert-top">
           <span class="cert-icon">🏆</span>
@@ -367,16 +513,25 @@
         <span class="cert-link">View Credential ↗</span>
       </a>
 
+      <a class="cert-card" href="https://www.udemy.com/course/machinelearning/" target="_blank">
+        <div class="cert-top">
+          <span class="cert-icon">🏆</span>
+          <span class="cert-badge">Coursera</span>
+        </div>
+        <span class="cert-name">Machine Learning A–Z [2026]: ML, DL, AI with AWS, Python & R</span>
+        <span class="cert-link">View Credential ↗</span>
+      </a>
+
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
   <section id="contact">
-    <p class="section-label"> 6. contact</p>
+    <p class="section-label">07 · contact</p>
     <h2>Get In Touch</h2>
     <p class="contact-intro">
       Open to full-time roles, freelance projects, and collaborations in Data Science, ML Engineering,
-      and Data Analytics. Available for remote work globally.
+      Data Engineering, and Cloud Analytics. Available for remote work globally.
     </p>
     <div class="contact-grid">
       <a class="contact-card" href="mailto:barunbikramdash@gmail.com">
@@ -413,10 +568,9 @@
   </section>
 
   <footer>
-    <p>&lt; Built by Barun Bikram Dash · Data Scientist & AI Engineer · Trier, Germany /&gt;</p>
+    <p>&lt; Built by Barun Bikram Dash · Data Scientist & ML Engineer · Trier, Germany /&gt;</p>
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
